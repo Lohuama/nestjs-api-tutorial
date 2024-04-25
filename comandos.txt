@@ -8,6 +8,9 @@ DOCKER
 - docker compose up dev-db -d  (executa em segundo plano)
 - docker ps
 - docker logs
+- RESTART NO PRISMA E BANCO: npm run db:dev:restart
+- UPGRADE: npm run db:dev:up
+- REMOVE: npm run db:dev:rm
 
 
 Configuração do Prisma:
@@ -15,6 +18,7 @@ Configuração do Prisma:
 - npx prisma migrate dev -- para migrar
 - npx prisma generate - para gerar os arquivos de Prisma.
 - npx prisma studio -- rodar o prisma
+- FAZ A MIGRAÇAO DO PRISMA AO BANCO DE DADOS: npm run prisma:dev:deploy ou prisma migrate deploy
 
 
 Iniciar o Servidor NestJS:
